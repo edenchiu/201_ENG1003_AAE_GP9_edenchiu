@@ -48,12 +48,12 @@ class AStarPlanner:
 
         ############you could modify the setup here for different aircraft models (based on the lecture slide) ##########################
         self.C_F = 1
-        self.C_T = 5
+        self.C_T = 2
         self.C_C = 10
-        self.Delta_F = 2.5
+        self.Delta_F = 1
         self.Delta_T = 5
-        self.Delta_T_A = 0.1 # additional time 
-        self.Delta_F_A = 0.5 # additional fuel
+        self.Delta_T_A = 0.2 # additional time 
+        self.Delta_F_A = 0.2 # additional fuel
         
 
         self.costPerGrid = self.C_F * self.Delta_F + self.C_T * self.Delta_T + self.C_C
@@ -285,7 +285,7 @@ def main():
     sy = 50.0  # [m]
     gx = 0.0  # [m]
     gy = 0.0  # [m]
-    grid_size = 1  # [m]
+    grid_size = 2  # [m]
     robot_radius = 1.0  # [m]
 
     # set obstacle positions
